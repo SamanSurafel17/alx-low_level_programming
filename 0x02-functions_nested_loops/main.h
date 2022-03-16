@@ -1,1 +1,2 @@
-__attribute__(.error all good)
+int _putchar(char c);
+void print_alphabet(void);

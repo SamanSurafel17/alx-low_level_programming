@@ -1,1 +1,1 @@
-__attribute__main.h = all good
+__attribute__.h = all good

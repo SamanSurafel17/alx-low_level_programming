@@ -1,22 +1,17 @@
-#include <main.h>
+#include "main.h"
+
 /**
- * main - function that prints 10 times the alphabet
+ * main - a function that prints the alphabet, in lowercase
  *
- * Return: x10 a-z
+ * Return: Always 0 (Succes)
  */
 int main(void)
 {
-	int n, co;
+	int n;
 
-	co = 0;
-
-	while (co < 10)
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		for (n = 'a'; n <= 'z'; n++)
-		{
-			putchar(n);
-		}
-		co++;
-		putchar('\n');
+		putchar(n);
 	}
+	putchar('\n');
 }

@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * main - entry block
- * void: no argumet
- * Return: 0
- **/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-        char saman[] = "_putchar";
+	char *sh = "saman";
 
-        int c;
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
 
-        for (c = 0; c < 8; c++)
-        {
-               _putchar(saman[]);
-        }
-        _putchar('\n');
-        return (0);
+	return (0);
 }

@@ -1,14 +1,19 @@
 #include "main.h"
 /**
- * main - Entry point;
- *
- * Return: on success 0;
- */
+ * main - entry block
+ * void: no argumet
+ * Return: 0
+ **/
 int main(void)
 {
-     char mob = 's';
+        char saman[] = "_putchar";
 
-     -putchar(mob);
+        int c;
 
-     return (0);
+        for (c = 0; c < 8; c++)
+        {
+               _putchar(saman[]);
+        }
+        _putchar('\n');
+        return (0);
 }

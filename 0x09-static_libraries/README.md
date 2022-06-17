@@ -1,1 +1,1 @@
-# My Static Libraries in C
+A directory on static libraries in C

@@ -1,29 +1,24 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
- * print_dlistint -  a function
- * @h: the head of list
- *
- * Return: number element of the link list
+ * print_dlistint - this function prints all the elements of a dlistint_t list.
+ * @h: is a pointer to the head of a dlistint_t list
+ * Return: the number of nodes size_t
  */
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t nb = 0;
-	const dlistint_t *ptr;
+	const dlistint_t *current = h;
 
-	/*Recherche de la tete de liste*/
-	while (h->prev != NULL)
-		h = h->prev;
-	ptr = h;
-	while (ptr != NULL)
+	size_t n = 0;
+
+	if (h == NULL)
+		return (n);
+	while (current)
 	{
-		printf("%d \n", ptr->n);
-		nb++;
-		ptr = ptr->next;
+		n++;
+		printf("%d\n", current->n);
+		current = current->next;
 	}
-
-	return (nb);
+	return (n);
 }
-
